@@ -1,90 +1,181 @@
 {
 
-  "name": "sample-project-node",
+2
+
+  "name": "sample-project",
+
+3
 
   "version": "0.1.0",
 
+4
+
   "private": true,
+
+5
 
   "proxy": "http://localhost:8080",
 
+6
+
   "scripts": {
 
-    "start": "node server.js"
+7
+
+    "start": "bash start.sh",
+
+8
 
     "build": "react-scripts build",
 
+9
+
     "test": "react-scripts test",
+
+10
 
     "eject": "react-scripts eject",
 
+11
+
+    "dev:api": "SERVERLESS_PORT=8080 bash start.sh"
+
+12
+
   },
+
+13
 
   "eslintConfig": {
 
+14
+
     "extends": [
+
+15
 
       "react-app",
 
+16
+
       "react-app/jest"
+
+17
 
     ]
 
+18
+
   },
+
+19
 
   "browserslist": {
 
+20
+
     "production": [
+
+21
 
       ">0.2%",
 
+22
+
       "not dead",
+
+23
 
       "not op_mini all"
 
+24
+
     ],
+
+25
 
     "development": [
 
+26
+
       "last 1 chrome version",
+
+27
 
       "last 1 firefox version",
 
+28
+
       "last 1 safari version"
+
+29
 
     ]
 
+30
+
   },
+
+31
 
   "dependencies": {
 
+32
+
     "@codemirror/lang-json": "^6.0.0",
+
+33
 
     "@testing-library/jest-dom": "^5.16.5",
 
+34
+
     "@testing-library/react": "^13.4.0",
+
+35
 
     "@testing-library/user-event": "^13.5.0",
 
+36
+
     "@uiw/react-codemirror": "^4.12.4",
+
+37
 
     "node-fetch": "^2.6.7",
 
+38
+
     "react": "^18.2.0",
+
+39
 
     "react-dom": "^18.2.0",
 
+40
+
     "react-scripts": "5.0.1",
+
+41
 
     "web-vitals": "^2.1.4"
 
+42
+
   },
+
+43
 
   "devDependencies": {
 
+44
+
     "@stormkit/serverless": "^0.9.10"
+
+45
 
   }
 
-}
+46
 
+}
